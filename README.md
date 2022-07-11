@@ -11,7 +11,7 @@ Update: Upgraded to Java 11 and Graph QL to 5+ version dependency
 - Usage for `allBooks`
 ```
 {
-   allBooks {
+   allCategories {
      idNumber
      title
      authors

@@ -4,7 +4,6 @@ import com.techprimers.graphql.springbootgrapqlexample.model.Book;
 import com.techprimers.graphql.springbootgrapqlexample.repository.BookRepository;
 import com.techprimers.graphql.springbootgrapqlexample.service.datafetcher.AllBooksDataFetcher;
 import com.techprimers.graphql.springbootgrapqlexample.service.datafetcher.BookDataFetcher;
-import com.techprimers.graphql.springbootgrapqlexample.service.datafetcher.BookSaveFetcher;
 import graphql.GraphQL;
 import graphql.schema.GraphQLSchema;
 import graphql.schema.idl.RuntimeWiring;
@@ -20,7 +19,6 @@ import javax.annotation.PostConstruct;
 import javax.transaction.Transactional;
 import java.io.File;
 import java.io.IOException;
-import java.time.LocalDate;
 import java.util.stream.Stream;
 
 @Service
@@ -29,7 +27,7 @@ public class GraphQLService {
     @Autowired
     BookRepository bookRepository;
 
-    @Value("classpath:books.graphql") // Inject Location of graphql Location In the resource File
+    @Value("classpath:graphql/books.graphql") // Inject Location of graphql Location In the resource File
     Resource resource;
 
     private GraphQL graphQL; // We can Execute any Query With using this api

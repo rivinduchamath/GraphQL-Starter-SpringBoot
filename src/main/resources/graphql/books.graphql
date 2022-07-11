@@ -9,7 +9,7 @@ schema {
 # User Can Get Book From Id
 type Query {
     allBooks: [Book]
-    book(id: String): Book
+    book(idNumber: String): Book
 }
 type Mutation {
     createBook(idNumber: String!, title: String, publisher: String, authors:[String] , publishedDate:String) : Book
