@@ -6,7 +6,10 @@
 	<groupId>com.cloudofgoods.graphql</groupId>
 	<artifactId>spring-boot-grapql-example</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<modules>
+		<module>SpringCompleateCrud</module>
+	</modules>
+	<packaging>pom</packaging>
 
 	<name>spring-boot-grapql-example</name>
 	<description>Demo project for Spring Boot</description>
