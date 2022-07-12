@@ -17,6 +17,7 @@ import javax.persistence.Table;
 @Entity
 public class Book {
 
+
     @Id
     private String idNumber;
     private String title;
