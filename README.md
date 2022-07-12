@@ -11,7 +11,7 @@ Update: Upgraded to Java 11 and Graph QL to 5+ version dependency
 - Usage for `allBooks`
 ```
 {
-   allCategories {
+   allBooks {
      idNumber
      title
      authors
@@ -22,11 +22,12 @@ Update: Upgraded to Java 11 and Graph QL to 5+ version dependency
 - Usage for `book`
 ```
   {
-   book(id: "123") {
+   book(idNumber: "123") {
      title
-     authors
+     publishedDate
      publisher
    }
+  }
 ```
 - Combination of both `allBooks` and `book`
 ```
@@ -35,7 +36,7 @@ Update: Upgraded to Java 11 and Graph QL to 5+ version dependency
      title
      authors
    }
-   book(id: "124") {
+   book(idNumber: "124") {
      title
      authors
      publisher
